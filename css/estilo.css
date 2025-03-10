@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(253, 96, 128);
+    color: rgb(197, 32, 76);
+}
+
+a{
+    font-size: 20px;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   justify-content: center;
+   align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    display: flex;
+    padding: 20px;
+}
