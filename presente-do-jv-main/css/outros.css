@@ -1,0 +1,25 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(197, 32, 76);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+    font-family: "Outfit";
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+  .grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
