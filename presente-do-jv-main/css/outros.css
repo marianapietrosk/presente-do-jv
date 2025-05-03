@@ -1,6 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
 body, html {
     height: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     color: rgb(197, 32, 76);
     margin: 0;
@@ -10,16 +16,51 @@ body, html {
     align-items: center;
     font-family: "Outfit";
 }
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    max-width: 600px;
-    margin: auto;
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* Responsivo para tablets */
+@media (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+p{
+  font-size: 25px;
+  margin: 200px 550px;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+}
